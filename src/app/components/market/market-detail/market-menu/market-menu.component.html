@@ -10,10 +10,11 @@
           <app-market-item
             *ngFor="let item of menuItems | async"
             [menuItem]="item"
+            (add)="shoppingCart.addItem($event)"
           ></app-market-item>
         </div>
       </div>
     </div>
   </div>
-  <div class="col-sm-4">One of three columns</div>
+  <div class="col-sm-4"><app-shopping-cart #shoppingCart></app-shopping-cart></div>
 </div>
