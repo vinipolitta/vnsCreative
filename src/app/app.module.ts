@@ -10,13 +10,15 @@ import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RestaurantComponent } from './components/restaurant/restaurant.component';
+import { RestaurantTableComponent } from './components/restaurant/restaurant-table/restaurant-table.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    RestaurantComponent
+    RestaurantComponent,
+    RestaurantTableComponent
   ],
   imports: [
     BrowserModule,
