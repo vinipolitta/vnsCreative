@@ -9,12 +9,14 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [NavbarComponent, SidebarComponent, FooterComponent, ],
   imports: [
     CommonModule,
     SharedRoutingModule,
+    BrowserAnimationsModule ,
     CollapseModule.forRoot(),
     HttpClientModule,
     FormsModule,

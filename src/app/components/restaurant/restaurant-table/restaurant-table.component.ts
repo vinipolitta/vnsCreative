@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import {
   animate,
   state,
@@ -17,7 +18,7 @@ import { Restaurant } from "src/app/shared/interfaces/restaurant";
       state("ready", style({ opacity: 1 })),
       transition("void => ready", [
         style({ opacity: 0, trasform: "translate(-30px, -10px)" }),
-        animate("1000ms 0s ease-in-out"),
+        animate("500ms 0s ease-in-out"),
       ]),
     ]),
   ],
@@ -27,7 +28,14 @@ export class RestaurantTableComponent implements OnInit {
   @Input() coluns;
   @Input() dataTables: Restaurant[];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  passRouter(id) {
+    this.router.navigate(['/restaurant', id])
+    console.log('fe', id);
+
+
+  }
 }

@@ -21,7 +21,7 @@ import { ShoppingCardService } from "src/app/core/services/shopping-card.service
       transition(
         "void => ready",
         animate(
-          "300ms 0s ease-in",
+          "1000ms 0s ease-in",
           keyframes([
             style({ opacity: 0, transform: "translateX(-30px)", offset: 0 }),
             style({ opacity: 0.8, transform: "translateX(10px)", offset: 0.8 }),
@@ -32,7 +32,7 @@ import { ShoppingCardService } from "src/app/core/services/shopping-card.service
       transition(
         "ready => void",
         animate(
-          "300ms 0s ease-out",
+          "1000ms 0s ease-out",
           keyframes([
             style({ opacity: 1, transform: "translateX(0px)", offset: 1 }),
             style({ opacity: 0.8, transform: "translateX(-10px)", offset: 0.2 }),

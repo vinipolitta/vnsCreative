@@ -16,6 +16,11 @@ import { MenuComponent } from './components/restaurant-detail/menu/menu.componen
 import { MenuItemComponent } from './components/restaurant-detail/menu-item/menu-item.component';
 import { ReviewsComponent } from './components/restaurant-detail/reviews/reviews.component';
 import { ShoppingCardComponent } from './components/restaurant-detail/shopping-card/shopping-card.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { MarketComponent } from './components/market/market.component';
+import { MaketTableComponent } from './components/market/maket-table/maket-table.component';
 
 
 @NgModule({
@@ -28,11 +33,16 @@ import { ShoppingCardComponent } from './components/restaurant-detail/shopping-c
     MenuComponent,
     MenuItemComponent,
     ReviewsComponent,
-    ShoppingCardComponent
+    ShoppingCardComponent,
+    MarketComponent,
+    MaketTableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    RouterModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
     ToastrModule.forRoot(),
