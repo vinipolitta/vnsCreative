@@ -23,6 +23,7 @@ const routes: Routes = [
     { path: 'reviews', component: ReviewsComponent },
 
   ] },
+  { path: 'order', loadChildren: () => import('./components/order/order.module').then(m => m.OrderModule) },
 
   // { path: 'restaurant', component: RestaurantComponent },
   // {
