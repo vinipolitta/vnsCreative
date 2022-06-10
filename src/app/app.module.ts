@@ -11,6 +11,11 @@ import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RestaurantComponent } from './components/restaurant/restaurant.component';
 import { RestaurantTableComponent } from './components/restaurant/restaurant-table/restaurant-table.component';
+import { RestaurantDetailComponent } from './components/restaurant-detail/restaurant-detail.component';
+import { MenuComponent } from './components/restaurant-detail/menu/menu.component';
+import { MenuItemComponent } from './components/restaurant-detail/menu-item/menu-item.component';
+import { ReviewsComponent } from './components/restaurant-detail/reviews/reviews.component';
+import { ShoppingCardComponent } from './components/restaurant-detail/shopping-card/shopping-card.component';
 
 
 @NgModule({
@@ -18,7 +23,12 @@ import { RestaurantTableComponent } from './components/restaurant/restaurant-tab
     AppComponent,
     HomeComponent,
     RestaurantComponent,
-    RestaurantTableComponent
+    RestaurantTableComponent,
+    RestaurantDetailComponent,
+    MenuComponent,
+    MenuItemComponent,
+    ReviewsComponent,
+    ShoppingCardComponent
   ],
   imports: [
     BrowserModule,

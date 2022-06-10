@@ -1,0 +1,45 @@
+<div class="card-header">
+  <table class="table tablesorter" id="" [@menuItemAppeared]="menuItemState">
+    <thead class="text-primary"></thead>
+    <tbody>
+      <tr>
+        <td style="width: 40%">
+          <span class="">
+            <img
+              [@rubberBand]="rubber"
+              (click)="rubber = !rubber"
+              class="widthImage"
+              src="{{ menuItem.imagePath }}"
+            />
+            &nbsp;
+            <span class="">{{ menuItem.name }}</span>
+          </span>
+        </td>
+        <td>{{ menuItem.description }}</td>
+        <td>{{ menuItem.price | currency: "BRL":true }}</td>
+        <td class="text-center">
+          <a (click)="emitAddEvent()" class=""
+            ><i class="fa fa-plus-circle"></i> Adicionar</a
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- <div class="cards">
+    <div class="card card-6">
+      <div class="row card__icon">
+        <img class="widthImage" src="{{ menuItem.imagePath }}" />
+        &nbsp;
+        <h3 class="d-flex align-items-center">{{ menuItem.name }}</h3>
+      </div>
+      &nbsp;
+      <h4 class="card__title">{{ menuItem.description }}</h4>
+      <h4 class="card__title">{{ menuItem.price | currency: "BRL":true }}</h4>
+      <span class="card__apply mt-2 ">
+        <a (click)="emitAddEvent()" class=""
+          ><i class="fa fa-plus-circle"></i> Adicionar</a
+        >
+      </span>
+    </div>
+  </div> -->
+</div>
