@@ -8,6 +8,8 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { ToastrModule } from 'ngx-toastr';
 import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './components/home/home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HomeComponent } from './components/home/home.component';
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
     ToastrModule.forRoot(),
-    SharedModule
+    NgbModule,
+    SharedModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
