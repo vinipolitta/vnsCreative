@@ -5,7 +5,7 @@
     </tr>
   </thead>
   <tbody *ngFor="let item of dataTables">
-    <tr>
+    <tr [routerLink]="['/market', item.id]">
       <td>
         <div class="media align-items-center">
           <a href="javascript:void(0)" class="avatar rounded-circle mr-3">

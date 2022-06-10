@@ -21,6 +21,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { MarketComponent } from './components/market/market.component';
 import { MaketTableComponent } from './components/market/maket-table/maket-table.component';
+import { MarketDetailComponent } from './components/market/market-detail/market-detail.component';
+import { MarketMenuComponent } from './components/market/market-detail/market-menu/market-menu.component';
+import { MarketItemComponent } from './components/market/market-detail/market-item/market-item.component';
+import { ShoppingCartComponent } from './components/market/market-detail/shopping-cart/shopping-cart.component';
 
 
 @NgModule({
@@ -35,7 +39,11 @@ import { MaketTableComponent } from './components/market/maket-table/maket-table
     ReviewsComponent,
     ShoppingCardComponent,
     MarketComponent,
-    MaketTableComponent
+    MaketTableComponent,
+    MarketDetailComponent,
+    MarketMenuComponent,
+    MarketItemComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,

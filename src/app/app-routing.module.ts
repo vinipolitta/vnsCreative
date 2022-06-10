@@ -1,3 +1,5 @@
+import { MarketMenuComponent } from './components/market/market-detail/market-menu/market-menu.component';
+import { MarketDetailComponent } from './components/market/market-detail/market-detail.component';
 import { MarketComponent } from './components/market/market.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -15,6 +17,12 @@ const routes: Routes = [
   },
   { path: 'home', component: HomeComponent },
   { path: 'market', component: MarketComponent },
+  { path: 'market/:id', component: MarketDetailComponent, children: [
+    { path: '', component: MarketMenuComponent },
+    { path: 'menu', component: MarketMenuComponent },
+    { path: 'reviews', component: ReviewsComponent },
+
+  ] },
 
   // { path: 'restaurant', component: RestaurantComponent },
   // {
