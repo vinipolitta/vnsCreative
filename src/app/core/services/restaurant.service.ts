@@ -29,6 +29,7 @@ export class RestaurantService {
       .pipe(take(1));
   }
 
+
   menuOfRestaurant(id: string): Observable<MenuItem[]> {
     return this.http
       .get<any>(this.api + `/restaurants/${id}/menu`)
