@@ -57,6 +57,7 @@ import { ShoppingCartComponent } from './components/market/market-detail/shoppin
     NgbModule,
     SharedModule,
 
+
   ],
   providers: [],
   bootstrap: [AppComponent]
