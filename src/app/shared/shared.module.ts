@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { InputContainerComponent } from './input-container/input-container.component';
+import { RadioComponent } from './radio/radio.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { InputContainerComponent } from './input-container/input-container.compo
     SidebarComponent,
     FooterComponent,
     InputContainerComponent,
+    RadioComponent,
   ],
   imports: [
     CommonModule,
@@ -34,6 +36,7 @@ import { InputContainerComponent } from './input-container/input-container.compo
     InputContainerComponent,
     CommonModule,
     SharedRoutingModule,
+    RadioComponent
   ],
 })
 export class SharedModule {}
