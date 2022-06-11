@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { InputContainerComponent } from './input-container/input-container.component';
 import { RadioComponent } from './radio/radio.component';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RadioComponent } from './radio/radio.component';
     FooterComponent,
     InputContainerComponent,
     RadioComponent,
+    RatingComponent,
   ],
   imports: [
     CommonModule,
@@ -36,7 +38,8 @@ import { RadioComponent } from './radio/radio.component';
     InputContainerComponent,
     CommonModule,
     SharedRoutingModule,
-    RadioComponent
+    RadioComponent,
+    RatingComponent
   ],
 })
 export class SharedModule {}

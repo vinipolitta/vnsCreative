@@ -98,7 +98,7 @@ export class OrderComponent implements OnInit {
       (item: CardItem) => new OrderItem(item.quantity, item.menuItem.id)
     );
     this.orderService.checkOrder(order).subscribe((orderId: Order) => {
-      this.route.navigate(['/order-summary']);
+      this.route.navigate(['order/order-summary']);
       this.orderService.clear();
     });
     console.log(order);

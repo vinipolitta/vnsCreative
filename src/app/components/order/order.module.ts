@@ -8,9 +8,10 @@ import { OrderItensComponent } from './order-itens/order-itens.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { DeliveryCostsComponent } from './delivery-costs/delivery-costs.component';
+import { OrderSumaryComponent } from './order-sumary/order-sumary.component';
 
 @NgModule({
-  declarations: [OrderComponent, OrderItensComponent, DeliveryCostsComponent],
+  declarations: [OrderComponent, OrderItensComponent, DeliveryCostsComponent, OrderSumaryComponent],
   imports: [
     CommonModule,
     OrderRoutingModule,
