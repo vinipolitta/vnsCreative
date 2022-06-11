@@ -34,4 +34,5 @@ export class RestaurantService {
       .get<any>(this.api + `/restaurants/${id}/menu`)
       .pipe(take(1));
   }
+
 }
